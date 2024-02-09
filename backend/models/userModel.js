@@ -16,14 +16,22 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Angiv et telefonnummer'],
     },
-
+    profilePicture: {
+      type: String,
+      default: 'default.jpg',
+    },
     role: {
       type: String,
       enum: ['user', 'slave', 'admin'],
       default: 'user',
     },
+    // For every DKK spent, the user gets 0.1 loyalty point
+    loyaltyPoints: {
+      type: Number,
+      default: 0,
+    },
     // DATA
-    // TODO: Bliver det brugt???
+    // TODO: Bliver det her data brugt???
     amountOfOrders: {
       type: Number,
       default: 0,
@@ -45,9 +53,13 @@ const UserSchema = new mongoose.Schema(
       type: Date,
       default: null,
     },
-    loyaltyPoints: {
-      type: Number,
-      default: 0,
+    favoriteShop: {
+      type: String,
+      default: null,
+    },
+    lastLoggedIn: {
+      type: Date,
+      default: null,
     },
     orders: [
       {
@@ -58,7 +70,7 @@ const UserSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-    // Ikke send password tilbage til frontend
+    // Ikke send password til frontend
     toJSON: {
       transform(doc, ret) {
         delete ret.password;

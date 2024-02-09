@@ -1,21 +1,13 @@
-import {
-  getUsers,
-  updateUser,
-  deleteUserById,
-} from "../controllers/userControllers.js";
-
-import { loginWithEmail, createUser } from "../controllers/loginController.js";
+// Controllers
+import { createUser } from '../controllers/userControllers.js';
+import { creatOrder } from '../controllers/orderController.js';
 
 const routes = (app) => {
-  // POST Endpoint
-  app.route("/signup").post(createUser);
+  // User Controller
+  app.route('/signup').post(createUser);
 
-  // GET Endpoint
-  app.route("/users").get(getUsers);
-
-  app.route("/user/:userId").put(updateUser).delete(deleteUserById);
-
-  app.route("/login").post(loginWithEmail);
+  // Order Controller
+  app.route('/order').post(creatOrder);
 };
 
 export default routes;
