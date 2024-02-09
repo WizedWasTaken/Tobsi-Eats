@@ -16,7 +16,6 @@ coverage
 *.spec.ts
 *.tsbuildinfo
 package-lock.json
-/backend/
 
 /cypress/videos/
 /cypress/screenshots/
