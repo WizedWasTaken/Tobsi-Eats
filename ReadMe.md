@@ -18,8 +18,8 @@ I en verden fyldt med madleveringsapps skiller Tobsi Eats sig ud som en ananas p
 For at dykke ned i dette gourmet-eventyr kræver det kun et par enkle trin:
 
 1. **Fork Repositoriet:** Start med at gaffe denne kode som din yndlingsret.
-2. **Klon til Lokal:** `git clone https://github.com/WizedWasTaken/tobsi-eats.git`
-3. **Installer Afhængigheder:** Kør `npm install` i frontend samt. backend af dit projekt og mærk magien.
+2. **Klon til Lokalt Miljø:** `git clone https://github.com/WizedWasTaken/tobsi-eats.git`
+3. **Installer Dependencies:** Kør `npm install` i frontend samt. backend af dit projekt og mærk magien.
 4. **Start Serveren:** `npm run serve` og se din lokale server starte hurtigere end du kan sige "Jeg er sulten".
 
 ## Bidrag 🤝
