@@ -11,7 +11,9 @@ I en verden fyldt med madleveringsapps skiller Tobsi Eats sig ud som en ananas p
 ## Funktioner (Eller, Hvorfor Vi Er Bedre End Alle Andre) 💪
 
 - **Brugerdefinerede UI-komponenter:** Fordi hvem har brug for konsistens, når du kan have kaos? Designet med elegance af spaghetti-kode, men skønheden af lasagne-lag. 🍝
-- **Bedste Service:** Hvem har lyst til at bevæge sig, gå udenfor og ikke bare få 2 (meget høflige) dværge til at hente mad?
+- **Integration af Bedste Service:** Vi tager "doven" til et helt nyt niveau. Forestil dig at bestille din mad og få den leveret af ikke én, men to (meget høflige) dværge, der går den ekstra mil for at sikre, at din madoplevelse er uden sidestykke. Fordi, hvorfor gå udenfor, når eventyret kan komme til dig? 🧙‍♂️🚪
+- **Cypress End-to-End Testing:** Hos Tobsi Eats tager vi ikke kun vores mad alvorligt, men også vores kode. Med Cypress sikrer vi, at din bestillingsoplevelse er så glat som smeltet chokolade. Ingen bugs her, kun features, der venter på at blive opdaget. 🐞➡️🦄
+- **SCSS for Stilfulde Stilarter:** Fordi vi mener, at selv koden bag vores app skal se lige så appetitlig ud som de retter, den leverer. Med SCSS gør vi vores stylesheets mere lækre end en veltilberedt bøf, hvilket sikrer, at Tobsi Eats ikke kun smager godt, men også ser fantastisk ud. 👗🎨
 
 ## Kom I Gang 🚀
 
