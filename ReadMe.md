@@ -11,15 +11,20 @@ I en verden fyldt med madleveringsapps skiller Tobsi Eats sig ud som en ananas p
 ## Funktioner (Eller, Hvorfor Vi Er Bedre End Alle Andre) 💪
 
 - **Brugerdefinerede UI-komponenter:** Fordi hvem har brug for konsistens, når du kan have kaos? Designet med elegance af spaghetti-kode, men skønheden af lasagne-lag. 🍝
-- **Bedste Service:** Hvem har lyst til at bevæge sig, gå udenfor og ikke bare få 2 (meget høflige) dværge til at hente mad?
+- **Integration af Bedste Service:** Vi tager "doven" til et helt nyt niveau. Forestil dig at bestille din mad og få den leveret af ikke én, men to (meget høflige) dværge, der går den ekstra mil for at sikre, at din madoplevelse er uden sidestykke. Fordi, hvorfor gå udenfor, når eventyret kan komme til dig? 🧙‍♂️🚪
+- **Cypress End-to-End Testing:** Hos Tobsi Eats tager vi ikke kun vores mad alvorligt, men også vores kode. Med Cypress sikrer vi, at din bestillingsoplevelse er så glat som smeltet chokolade. Ingen bugs her, kun features, der venter på at blive opdaget. 🐞➡️🦄
+- **SCSS for Stilfulde Stilarter:** Fordi vi mener, at selv koden bag vores app skal se lige så appetitlig ud som de retter, den leverer. Med SCSS gør vi vores stylesheets mere lækre end en veltilberedt bøf, hvilket sikrer, at Tobsi Eats ikke kun smager godt, men også ser fantastisk ud. 👗🎨
+- **Sentry for Fejloverblik:** Fordi selv de bedste af os spilder lidt sauce på blusen nu og da. Sentry er vores digitale serviet, der hurtigt rydder op i småuheld og sikrer, at din oplevelse på Tobsi Eats forbliver pletfri. Med realtidsfejloverblik kan vi nappe de bugs, før de når at krybe ind i din dessert. 🐜🔍
+- **Tailwind for Vind i Sejlene:** Vi har indkaldt den mest kraftfulde magi i CSS-land - Tailwind. Dette værktøj lader os style vores app, så den er lige så frisk og indbydende som din morgenkaffe. Tailwind giver os kraften til at designe med en effektivitet og skønhed, der får selv regnvejrsdage til at føles solrige. ☀️💨
+- **Ikonbibliotek for Øjenguf:** For at gøre din navigering igennem Tobsi Eats lige så intuitiv som din vej til køleskabet midt om natten, har vi integreret et ikonbibliotek (https://vue-icons.kalimah-apps.com/). Disse ikoner er ikke bare smukke; de er som små kunstværker, der guider dig gennem din kulinariske rejse på appen. Fordi, lad os være ærlige, hvem kan modstå en god visuel fristelse? 🎨🍽
 
 ## Kom I Gang 🚀
 
 For at dykke ned i dette gourmet-eventyr kræver det kun et par enkle trin:
 
 1. **Fork Repositoriet:** Start med at gaffe denne kode som din yndlingsret.
-2. **Klon til Lokal:** `git clone https://github.com/WizedWasTaken/tobsi-eats.git`
-3. **Installer Afhængigheder:** Kør `npm install` i frontend samt. backend af dit projekt og mærk magien.
+2. **Klon til Lokalt Miljø:** `git clone https://github.com/WizedWasTaken/tobsi-eats.git`
+3. **Installer Dependencies:** Kør `npm install` i frontend samt. backend af dit projekt og mærk magien.
 4. **Start Serveren:** `npm run serve` og se din lokale server starte hurtigere end du kan sige "Jeg er sulten".
 
 ## Bidrag 🤝
