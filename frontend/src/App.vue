@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 
-import Sidebar from '@/components/ui/Sidebar/SidebarComponent.vue'
+import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue'
 </script>
 
 <template>
-  <header><Sidebar /></header>
+  <!-- <div class="flex"> -->
+  <header>
+    <NavigationComponent />
+  </header>
 
-  <RouterView />
+  <div class="p-4 sm:ml-64">
+    <RouterView />
+  </div>
+  <!-- </div> -->
 </template>
 
 <style scoped lang="scss"></style>

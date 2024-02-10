@@ -1,10 +1,8 @@
-<script setup lang="ts">
-import { BsCalendar4Range } from '@kalimahapps/vue-icons/bs'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <main class="flex h-screen w-full justify-center items-center">
-    <div class="button flex"><BsCalendar4Range /> <span class="pl-5">Home</span></div>
+  <main class="flex justify-center items-center">
+    <h1>Hej</h1>
   </main>
 </template>
 
