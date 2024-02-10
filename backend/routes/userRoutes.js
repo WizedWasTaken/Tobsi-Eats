@@ -1,13 +1,13 @@
 // Controllers
-import { createUser } from '../controllers/userControllers.js';
-import { creatOrder } from '../controllers/orderController.js';
+import { registerUser } from '../controllers/userControllers.js';
+import { createOrder } from '../controllers/orderController.js';
 
 const routes = (app) => {
   // User Controller
-  app.route('/signup').post(createUser);
+  app.route('/signup').post(registerUser);
 
   // Order Controller
-  app.route('/order').post(creatOrder);
+  app.route('/order').post(createOrder);
 };
 
 export default routes;

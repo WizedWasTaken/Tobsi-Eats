@@ -38,7 +38,7 @@ const UserSchema = new mongoose.Schema(
     },
     credit: {
       type: Number,
-      def,
+      default: 0,
     },
     totalAmountPaid: {
       type: Number,

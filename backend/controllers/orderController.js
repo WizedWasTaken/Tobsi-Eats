@@ -9,7 +9,7 @@ const Order = mongoose.model('User', OrderSchema);
  * @param {req} request
  * @param {result} result
  */
-export const creatOrder = async (req, res) => {
+export const createOrder = async (req, res) => {
   try {
     if (findUserByUsername(req.body.user) === null) {
       res.status(400).json({ message: 'User not found' });
