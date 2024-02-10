@@ -11,7 +11,9 @@ import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue
   </header>
 
   <div class="p-4 sm:ml-64">
-    <RouterView />
+    <div class="p-4 mt-14">
+      <RouterView />
+    </div>
   </div>
   <!-- </div> -->
 </template>

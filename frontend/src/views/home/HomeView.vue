@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="flex justify-center items-center">
-    <h1>Hej</h1>
-  </main>
+  <h1 class="text-lg">Forside</h1>
 </template>
 
 <style scoped lang="scss"></style>
