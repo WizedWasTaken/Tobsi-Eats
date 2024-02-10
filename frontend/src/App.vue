@@ -5,7 +5,6 @@ import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue
 </script>
 
 <template>
-  <!-- <div class="flex"> -->
   <header>
     <NavigationComponent />
   </header>
@@ -15,7 +14,6 @@ import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue
       <RouterView />
     </div>
   </div>
-  <!-- </div> -->
 </template>
 
 <style scoped lang="scss"></style>

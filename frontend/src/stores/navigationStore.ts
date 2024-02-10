@@ -15,6 +15,7 @@ export const useNavbarStore = defineStore('navbar', {
       this.isSidebarOpen = !this.isSidebarOpen
     },
     toggleUserDropdown() {
+      this.isSidebarOpen = false
       this.isUserDropdownOpen = !this.isUserDropdownOpen
     }
   }
