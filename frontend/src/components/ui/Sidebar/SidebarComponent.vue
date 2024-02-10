@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import {
+  HomeIcon,
+  MagnifyingGlassIcon,
+  UserCircleIcon,
+  ChatBubbleBottomCenterTextIcon,
+  AdjustmentsVerticalIcon,
+  ShoppingCartIcon,
+  GlobeEuropeAfricaIcon
+} from '@heroicons/vue/24/outline'
+
+const hover = ref(false)
+</script>
+
 <!-- TODO: Smoothen animations -->
 <template>
   <nav
@@ -10,8 +25,8 @@
     @mouseleave="hover = false"
   >
     <a :class="['flex items-center mt-3', hover ? 'w-full px-3' : 'justify-center']" href="#">
-      <PuzzlePieceIcon class="w-8 h-8" />
-      <span v-if="hover" class="ml-2 text-lg font-bold">Project Name</span>
+      <GlobeEuropeAfricaIcon class="w-8 h-8" />
+      <span v-if="hover" class="ml-2 text-lg font-bold">Tobsi Eats</span>
     </a>
 
     <div :class="[hover ? 'w-full px-2' : '']">
@@ -27,37 +42,7 @@
           href="#"
         >
           <HomeIcon class="w-6 h-6" />
-          <span v-if="hover" class="ml-2 text-sm font-medium">Dasboard</span>
-        </a>
-        <a
-          :class="[
-            'flex items-center h-12 mt-2 rounded hover:bg-gray-300',
-            hover ? 'w-full px-3' : 'justify-center w-12'
-          ]"
-          href="#"
-        >
-          <MagnifyingGlassIcon class="w-6 h-6" />
-          <span v-if="hover" class="ml-2 text-sm font-medium">Search</span>
-        </a>
-        <a
-          :class="[
-            'flex items-center h-12 mt-2 rounded hover:bg-gray-300',
-            hover ? 'w-full px-3' : 'justify-center w-12'
-          ]"
-          href="#"
-        >
-          <PresentationChartBarIcon class="w-6 h-6" />
-          <span v-if="hover" class="ml-2 text-sm font-medium">Insights</span>
-        </a>
-        <a
-          :class="[
-            'flex items-center h-12 mt-2 rounded hover:bg-gray-300',
-            hover ? 'w-full px-3' : 'justify-center w-12'
-          ]"
-          href="#"
-        >
-          <RectangleStackIcon class="w-6 h-6" />
-          <span v-if="hover" class="ml-2 text-sm font-medium">Docs</span>
+          <span v-if="hover" class="ml-2 text-sm font-medium">Dashboard</span>
         </a>
       </div>
 
@@ -105,19 +90,4 @@
   </nav>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-import {
-  HomeIcon,
-  MagnifyingGlassIcon,
-  PresentationChartBarIcon,
-  UserCircleIcon,
-  ChatBubbleBottomCenterTextIcon,
-  AdjustmentsVerticalIcon,
-  ShoppingCartIcon,
-  RectangleStackIcon,
-  PuzzlePieceIcon
-} from '@heroicons/vue/24/outline'
-
-const hover = ref(false)
-</script>
+<style lang="scss"></style>
