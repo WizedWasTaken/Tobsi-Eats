@@ -81,10 +81,33 @@ const UserSchema = new mongoose.Schema(
 
 UserSchema.pre('save', async function (next) {
   if (this.isModified('password')) {
-    this.password = await bcrypt.hash(this.password, 10);
+    if (this.PasswordCheck(this.password)) {
+      this.password = await bcrypt.hash(this.password, 10);
+    }
+    throw new Error('Password is not available for hashing!');
   }
   next();
 });
+
+UserSchema.methods.PasswordCheck = async function (password) {
+  if (password.length < 6) {
+    throw new Error('Password is too short!');
+  }
+
+  if (password.length > 50) {
+    throw new Error('Password is too long!');
+  }
+
+  if (password === 'password') {
+    throw new Error('Password is too common!');
+  }
+
+  if (password.includes(this.username)) {
+    throw new Error('Password includes username!');
+  }
+
+  return true;
+};
 
 UserSchema.methods.isValidPassword = async function (password) {
   const compare = await bcrypt.compare(password, this.password);
