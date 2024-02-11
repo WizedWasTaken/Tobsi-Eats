@@ -5,7 +5,7 @@ import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue
 </script>
 
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col h-screen w-screen">
     <header class="flex-shrink-0">
       <NavigationComponent />
     </header>
