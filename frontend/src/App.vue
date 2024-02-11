@@ -5,7 +5,8 @@ import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue
 </script>
 
 <template>
-  <div class="flex flex-col h-screen w-screen">
+  <!-- w-screen caused overflow, fuck specifying width ever again 😎 -->
+  <div class="flex flex-col h-screen">
     <header class="flex-shrink-0">
       <NavigationComponent />
     </header>
@@ -19,7 +20,7 @@ import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue
 </template>
 
 <!-- Animation for page changing. -->
-<style scoped lang="scss">
+<style lang="scss">
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all 0.5s ease;
