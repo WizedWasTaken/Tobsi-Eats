@@ -111,7 +111,6 @@ export default {
             class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             @click="toggleSidebar"
           >
-            <!-- TODO: Fix Sidebar i mobile menu -->
             <span class="sr-only">Open sidebar</span>
             <svg
               class="w-6 h-6"
@@ -128,7 +127,6 @@ export default {
             </svg>
           </button>
           <router-link to="/" class="flex ms-2 md:me-24">
-            <!-- TODO: Change source from flowbite -->
             <img
               src="@/assets/logo.png"
               class="h-8 me-3"
@@ -144,7 +142,6 @@ export default {
         <div class="flex items-center">
           <div class="flex items-center ms-3">
             <div>
-              <!-- TODO: Få til at virk med vores bruger system. -->
               <button
                 type="button"
                 class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
@@ -153,7 +150,7 @@ export default {
                 <span class="sr-only">Open user menu</span>
                 <img
                   v-if="user.profilePicture"
-                  :src="user.profilePicture"
+                  :src="'http://localhost:4000/assets/' + user.profilePicture"
                   @click.stop="toggleUserDropdown"
                   class="w-8 h-8 rounded-full"
                   alt="user photo"

@@ -1,9 +1,9 @@
-import express from "express";
-import mongoose from "mongoose";
-import bodyparser from "body-parser";
-import cors from "cors";
-import routes from "./routes/userRoutes";
-import dotenv from "dotenv";
+import express from 'express';
+import mongoose from 'mongoose';
+import bodyparser from 'body-parser';
+import cors from 'cors';
+import routes from './routes/userRoutes';
+import dotenv from 'dotenv';
 
 // ENV Setup
 dotenv.config();
@@ -25,7 +25,9 @@ app.use(cors());
 // Routes
 routes(app);
 
-app.get("/", (req, res) => {
+app.use('/assets', express.static('assets'));
+
+app.get('/', (req, res) => {
   res.send(`API is online...`);
 });
 
