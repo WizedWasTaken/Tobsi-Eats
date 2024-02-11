@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  prefix: '', // Custom Prefix
   content: ['./index.html', './src/**/*.vue'],
   theme: {
     extend: {
@@ -17,5 +18,6 @@ export default {
       }
     }
   },
+  important: true,
   plugins: []
 }

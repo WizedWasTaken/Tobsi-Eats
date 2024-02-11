@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import NavBarComponent from '@/components/ui/Sidebar/NavBarComponent.vue'
-import SideBarComponent from '@/components/ui/Sidebar/SideBarComponent.vue'
-
-// import { useHoverStore } from '@/stores/hover'
-
-// const hover = useHoverStore()
+import SidebarComponent from '@/components/ui/Sidebar/SidebarComponent.vue'
 </script>
 
 <template>
   <NavBarComponent />
 
-  <SideBarComponent />
+  <SidebarComponent />
 </template>
 
 <style lang="scss" scoped></style>

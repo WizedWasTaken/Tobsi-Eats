@@ -5,12 +5,12 @@ import NavigationComponent from '@/components/ui/Sidebar/NavigationComponent.vue
 </script>
 
 <template>
-  <header>
-    <NavigationComponent />
-  </header>
+  <div class="flex flex-col h-screen">
+    <header class="flex-shrink-0">
+      <NavigationComponent />
+    </header>
 
-  <div class="p-4 sm:ml-64">
-    <div class="p-4 mt-14">
+    <div class="flex flex-grow p-4 mt-14 sm:ml-64">
       <RouterView />
     </div>
   </div>

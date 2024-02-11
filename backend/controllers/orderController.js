@@ -12,7 +12,7 @@ const Order = mongoose.model('User', OrderSchema);
 export const createOrder = async (req, res) => {
   try {
     if (findUserByUsername(req.body.user) === null) {
-      res.status(400).json({ message: 'User not found' });
+      res.status(400).json({ message: 'Bruger ikke fundet.' });
     }
     const order = new Order(req.body);
     const savedOrder = await order.save();
