@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   prefix: '', // Custom Prefix
+  darkMode: 'class', // Dark Mode
   content: ['./index.html', './src/**/*.vue'],
   theme: {
     extend: {

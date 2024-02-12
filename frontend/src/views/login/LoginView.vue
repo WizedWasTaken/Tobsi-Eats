@@ -27,7 +27,7 @@
           Login
         </button>
       </form>
-      <p class="text-center">
+      <p class="text-center mt-6">
         Har du ikke en konto?
         <router-link class="text-blue-500 underline" to="/signup">Opret en konto</router-link>
       </p>
