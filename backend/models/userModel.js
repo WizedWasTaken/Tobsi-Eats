@@ -14,6 +14,7 @@ const UserSchema = new mongoose.Schema(
     },
     phoneNumber: {
       type: String,
+      unique: true,
       required: [true, 'Angiv et telefonnummer'],
     },
     profilePicture: {

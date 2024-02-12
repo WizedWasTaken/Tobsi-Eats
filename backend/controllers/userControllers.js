@@ -18,6 +18,14 @@ export const registerUser = async (req, res) => {
     if (!PasswordCheck(user.password)) {
       return res.status(400).json({ error: 'Kode ordet er ikke stærkt nok.' });
     }
+
+    const existingUser = await User.findOne({ phoneNumber: user.phoneNumber });
+    if (existingUser) {
+      return res
+        .status(400)
+        .json({ error: 'Telefonnummeret er allerede i brug.' });
+    }
+
     await user.save();
     res.status(201).json(user);
   } catch (error) {

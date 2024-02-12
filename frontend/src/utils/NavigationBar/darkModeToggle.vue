@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-btn @click="toggleDarkMode">Toggle {{ currentMode }} Mode</v-btn>
+  <div class="flex justify-center items-center">
+    <v-btn :disabled="isDisabled" @click="toggleDarkMode">Toggle {{ currentMode }} Mode</v-btn>
   </div>
 </template>
 
@@ -10,6 +10,7 @@ import { ref, onMounted } from 'vue'
 
 const theme = useTheme()
 const isDarkMode = ref(false)
+const isDisabled = ref(false)
 let currentMode = ''
 
 onMounted(() => {
@@ -27,7 +28,8 @@ onMounted(() => {
   }
 })
 
-function toggleDarkMode() {
+async function toggleDarkMode() {
+  isDisabled.value = true
   isDarkMode.value = !isDarkMode.value
   theme.global.name.value = isDarkMode.value ? 'dark' : 'light'
   if (isDarkMode.value) {
@@ -38,5 +40,7 @@ function toggleDarkMode() {
     document.documentElement.classList.remove('dark')
   }
   localStorage.setItem('darkMode', isDarkMode.value.toString())
+  await new Promise((resolve) => setTimeout(resolve, 1500))
+  isDisabled.value = false
 }
 </script>

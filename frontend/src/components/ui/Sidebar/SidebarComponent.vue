@@ -44,10 +44,8 @@ export default defineComponent({
     <!-- Sidebar Items -->
     <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
-        <div class="w-full h-full flex justify-center items-center">
-          <darkModeToggle />
-        </div>
-        <ul class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
+        <darkModeToggle />
+        <ul class="pt-4 mt-4 space-y-2 font-medium">
           <li>
             <GeneralItems />
           </li>
