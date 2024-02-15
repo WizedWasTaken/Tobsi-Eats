@@ -65,17 +65,16 @@ export default {
         const data = await response.json()
 
         if (!response.ok) {
-          // Handle login failure
           console.error(new Date(), 'Fejl Kode:', data.error)
           toast.error('Der skete en fejl med dit login. Prøv igen senere.')
         } else {
-          toast.success('Du er logget ind! Velkommen tilbage')
+          toast.success('Du er logget ind!\n\n Velkommen tilbage')
           userStore.setUser(data)
           console.log('User:', userStore.user)
         }
       } catch (error: any) {
         console.error('An error occurred:', error.message)
-        alert('An error occurred, please try again.') // Displaying generic error message, adjust as necessary
+        alert('Der opstod en fejl. Prøv igen.')
       } finally {
         isButtonDisabled.value = false
       }

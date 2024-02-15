@@ -34,6 +34,7 @@ export const useUserStore = defineStore('user', {
     getUsername() {
       return this.user.username
     },
+    
     logout() {
       this.user = {} as UserInfo
     }

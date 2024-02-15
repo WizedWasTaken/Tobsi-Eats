@@ -16,7 +16,7 @@ export default {
     const toast = useToast()
 
     // Is user dropdown open
-    const isUserDropdownOpen = computed(() => navbarStore.isUserDropdownOpen)
+    let isUserDropdownOpen = computed(() => navbarStore.isUserDropdownOpen)
 
     // User Store
     const userStore = useUserStore()
@@ -48,6 +48,8 @@ export default {
 
     const logout = () => {
       userStore.logout()
+      navbarStore.isUserDropdownOpen = false
+      toast.error('Du er nu logget ud.')
     }
 
     const redirectToLogin = () => {
@@ -56,21 +58,11 @@ export default {
     }
 
     const turnOnComicSans = () => {
-      toast.success('Vi vidste du elskede burger! 🍔', {
-        timeout: 3000
-      })
-      setTimeout(() => {
-        document.body.style.fontFamily = 'Comic Sans MS'
-        toast.success('Måske også Comic Sans? 😎', {
-          timeout: 3000
-        })
-      }, 2500)
+      document.body.style.fontFamily = 'Comic Sans MS'
+
       setTimeout(() => {
         document.body.style.fontFamily = 'Arial'
-        toast.success('Ej, det var også for ondt! - vi har selvfølgelig god kundeservice :D', {
-          timeout: 3000
-        })
-      }, 15000)
+      }, 7500)
     }
 
     // Event listener initialise
@@ -92,7 +84,7 @@ export default {
       redirectToLogin,
       turnOnComicSans
     }
-  },
+  }
 }
 </script>
 
@@ -183,36 +175,22 @@ export default {
                 </div>
                 <ul class="py-1" role="none">
                   <li>
-                    <a
-                      href="#"
+                    <router-link
+                      to="/dashboard"
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                       role="menuitem"
-                      >Dashboard</a
+                      >Dashboard</router-link
                     >
                   </li>
                   <li>
-                    <a
+                    <p
                       href="#"
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                       role="menuitem"
-                      >Settings</a
+                      @click="logout()"
                     >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                      role="menuitem"
-                      >Earnings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                      role="menuitem"
-                      >Sign out</a
-                    >
+                      Log Ud
+                    </p>
                   </li>
                 </ul>
               </div>
